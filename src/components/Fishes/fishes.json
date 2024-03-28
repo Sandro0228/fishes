@@ -4,7 +4,7 @@
         "region": "Pacific Islands",
         "scientificName": "Pristipomoides filamentosus",
         "illustrationPhoto": {
-            "src": "https://origin-east-01-drupal-fishwatch.woc.noaa.gov/sites/default/files/Pink_snapper_NB_W_0.png",
+            "src": "images/pink_snapper.png",
             "alt": "Pink snapper",
             "title": "Pink snapper"
         },
@@ -15,7 +15,7 @@
         "region": "Greater Atlantic",
         "scientificName": "Urophycis tenuis",
         "illustrationPhoto": {
-            "src": "https://origin-east-01-drupal-fishwatch.woc.noaa.gov/sites/default/files/Hake_White_NB_W_0.png",
+            "src": "images/white_hake.jpg",
             "alt": "Illustration of white hake. Credit: Jack Hornady.",
             "title": ""
         },
@@ -26,7 +26,7 @@
         "region": "Greater Atlantic",
         "scientificName": "Scomber colias",
         "illustrationPhoto": {
-            "src": "https://origin-east-01-drupal-fishwatch.woc.noaa.gov/sites/default/files/Atlantic-chub-mackerel-FNL_NB_W.png",
+            "src": "images/atlantic_mackerel.png",
             "alt": "Illustration of Atlantic chub mackerel",
             "title": "Atlantic chub mackerel"
         },
@@ -37,7 +37,7 @@
         "region": "Greater Atlantic",
         "scientificName": "Illex illecebrosus",
         "illustrationPhoto": {
-            "src": "https://origin-east-01-drupal-fishwatch.woc.noaa.gov/sites/default/files/Squid_Illex_NB_W.png",
+            "src": "images/shortfin_squid.png",
             "alt": "shortfin squid",
             "title": "Shortfin Squid"
         },
@@ -48,7 +48,7 @@
         "region": "Greater Atlantic",
         "scientificName": "Homarus americanus",
         "illustrationPhoto": {
-            "src": "https://origin-east-01-drupal-fishwatch.woc.noaa.gov/sites/default/files/Lobster_American_NB_Web.png",
+            "src": "images/american_lobster.png",
             "alt": "American Lobster",
             "title": "American Lobster"
         },
@@ -59,7 +59,7 @@
         "region": "West Coast, Alaska",
         "scientificName": "Sebastes flavidus",
         "illustrationPhoto": {
-            "src": "https://origin-east-01-drupal-fishwatch.woc.noaa.gov/sites/default/files/Rockfish_Yellowtail_NB_W.png",
+            "src": "images/yelloweye_rockfish.jpg",
             "alt": "Yellowtail rockfish",
             "title": "Yellowtail rockfish"
         },
@@ -70,7 +70,7 @@
         "region": "West Coast, Alaska",
         "scientificName": "Sebastes paucispinis",
         "illustrationPhoto": {
-            "src": "https://origin-east-01-drupal-fishwatch.woc.noaa.gov/sites/default/files/Bocaccio_NB_W.png",
+            "src": "images/bocaccio_rockfish.jpg",
             "alt": "Illustration of a Bocaccio rockfish.",
             "title": "Bocaccio rockfish."
         },
@@ -81,7 +81,7 @@
         "region": "West Coast, Greater Atlantic, Alaska",
         "scientificName": "Saccharina latissima",
         "illustrationPhoto": {
-            "src": "https://origin-east-01-drupal-fishwatch.woc.noaa.gov/sites/default/files/Kelp_Sugar_NB_W.png",
+            "src": "images/sugar_kelp.jpg",
             "alt": "",
             "title": ""
         },
@@ -92,7 +92,7 @@
         "region": "West Coast",
         "scientificName": "Anoplopoma fimbria",
         "illustrationPhoto": {
-            "src": "https://origin-east-01-drupal-fishwatch.woc.noaa.gov/sites/default/files/sablefish.png",
+            "src": "images/sablefish.jpg",
             "alt": "",
             "title": ""
         },
@@ -102,7 +102,7 @@
         "region": "Greater Atlantic",
         "scientificName": "Hippoglossus hippoglossus",
         "illustrationPhoto": {
-            "src": "https://origin-east-01-drupal-fishwatch.woc.noaa.gov/sites/default/files/atlantic-halibut-illustration.png",
+            "src": "images/atlantic_halibut.png",
             "alt": "Illustration of Atlantic Halibut.",
             "title": "Illustration of Atlantic Halibut."
         },

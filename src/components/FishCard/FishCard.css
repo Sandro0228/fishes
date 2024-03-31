@@ -56,6 +56,10 @@ img {
   padding: 5px;
 }
 
+.like-button:hover {
+  box-shadow: 5px 3px 3px seagreen;
+}
+
 .unlike-button {
   border: 1px solid red;
   border-radius: 5px;
@@ -65,4 +69,8 @@ img {
   bottom: 10px;
   left: 80px;
   padding: 5px;
+}
+
+.unlike-button:hover {
+  box-shadow: 5px 3px 3px red;
 }

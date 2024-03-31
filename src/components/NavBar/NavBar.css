@@ -3,4 +3,6 @@
   align-items: center;
   height: 100px;
   padding: 20px;
+  background: white;
+  border-bottom: 3px solid teal;
 }

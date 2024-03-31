@@ -3,6 +3,14 @@ span {
   width: 100%;
   justify-content: space-between;
 }
+h3 {
+  padding: 5px;
+}
+
+p {
+  padding: 10px;
+  font-size: 0.7vw;
+}
 
 .card {
   padding: 8px;
@@ -11,25 +19,50 @@ span {
   height: 500px;
   border: 1px solid #ccc;
   border-radius: 8px;
+  box-shadow: 10px 5px 5px gray;
 }
 
 img {
-  width: 100%;
+  width: 60%;
   object-fit: cover;
+  padding: 5px;
+  border-radius: 8px;
 }
 
 .show-button {
   position: absolute;
   background-color: #fff;
   color: #0a0a23;
-  border: 1px solid #000;
+  border: 1px solid teal;
   border-radius: 10px;
   padding: 15px;
   min-height: 30px;
   min-width: 120px;
+  font-weight: bold;
+}
+
+.show-button:hover {
+  box-shadow: 10px 5px 5px teal;
 }
 
 .like-button {
-  border: none;
+  border: 1px solid seagreen;
+  border-radius: 5px;
   background: none;
+  display: flex;
+  position: fixed;
+  bottom: 10px;
+  left: 50px;
+  padding: 5px;
+}
+
+.unlike-button {
+  border: 1px solid red;
+  border-radius: 5px;
+  background: none;
+  display: flex;
+  position: fixed;
+  bottom: 10px;
+  left: 80px;
+  padding: 5px;
 }

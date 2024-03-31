@@ -26,16 +26,29 @@ const FishCard = ({
     setIsShowing(true);
   };
 
-  const handleStarClicked = () => {
+  const handleLikeClicked = () => {
     setStars((prevStar) => prevStar + 1);
+  };
+
+  const handleUnlikeClicked = () => {
+    setStars((prevStar) => prevStar - 1);
   };
 
   const renderStars = () => {
     let starIcon = "";
 
-    for (let i = 0; i < stars; i++) {
-      starIcon += "⭐";
+    if (stars > 20) {
+      starIcon += "⭐⭐⭐⭐⭐ Excellent  ";
+    } else if (stars > 15) {
+      starIcon += "⭐⭐⭐⭐ Good  ";
+    } else if (stars > 10) {
+      starIcon += "⭐⭐⭐ Normal  ";
+    } else if (stars > 5) {
+      starIcon += "⭐⭐ Bad  ";
+    } else {
+      starIcon += "⭐ Very Bad  ";
     }
+
     return starIcon;
   };
 
@@ -59,14 +72,21 @@ const FishCard = ({
         <Modal onClose={() => setIsShowing(false)}>
           <img src={illustrationPhoto.src} alt={illustrationPhoto.alt} />
           <span>
-            Stars: {renderStars()} {stars}
+            Rating: {renderStars()}
+            <h4>Likes: {stars}</h4>
             <button
               className="like-button"
               onClick={() => {
-                handleStarClicked();
+                handleLikeClicked();
               }}
             >
               👍
+            </button>
+            <button
+              className="unlike-button"
+              onClick={() => handleUnlikeClicked()}
+            >
+              👎
             </button>
           </span>
         </Modal>

@@ -5,6 +5,10 @@ span {
 }
 h3 {
   padding: 5px;
+  background: lightcyan;
+  border-radius: 10px;
+  color: teal;
+  text-align: center;
 }
 
 p {
@@ -23,7 +27,8 @@ p {
 }
 
 img {
-  width: 60%;
+  width: 270px;
+  height: 120px;
   object-fit: cover;
   padding: 5px;
   border-radius: 8px;
@@ -67,7 +72,7 @@ img {
   display: flex;
   position: fixed;
   bottom: 10px;
-  left: 80px;
+  left: 90px;
   padding: 5px;
 }
 

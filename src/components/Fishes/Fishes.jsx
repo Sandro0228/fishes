@@ -32,7 +32,12 @@ const Fishes = ({ fishes: initialFishes }) => {
 
   return (
     <div className="fish-wrapper">
-      <button onClick={() => setCreateFish(true)}>Create Fish</button>
+      <button
+        onClick={() => setCreateFish(true)}
+        className="create-fish-button"
+      >
+        Create Fish
+      </button>
       {createFish && (
         <Modal onClose={() => setCreateFish(false)}>
           <FishForm onSubmitFish={handleFishSubmit}></FishForm>

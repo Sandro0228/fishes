@@ -4,16 +4,16 @@ import "./fishes.css";
 import Modal from "../Modal/Modal";
 import FishForm from "../FishForm/FishForm";
 
-const Fishes = ({ fishes }) => {
+const Fishes = ({ fishes: initialFishes }) => {
   const [createFish, setCreateFish] = useState(false);
-  const [fishList, setFishList] = useState(fishes);
+  const [fishes, setFishes] = useState(initialFishes);
   const fishClickDone = ({ info, name }) => {
     console.log({ info, name });
   };
 
   const handleFishSubmit = (fish) => {
     if (fish) {
-      setFishList((prevFish) => {
+      setFishes((prevFish) => {
         return [...prevFish, fish];
       });
       setCreateFish(false);
@@ -28,7 +28,7 @@ const Fishes = ({ fishes }) => {
     return () => {
       clearTimeout(timeoutId);
     };
-  }, [fishList]);
+  }, [fishes]);
 
   return (
     <div className="fish-wrapper">

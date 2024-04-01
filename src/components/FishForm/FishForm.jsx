@@ -80,7 +80,7 @@ const FishForm = ({ onSubmitFish }) => {
           onChange={handleChange}
           className="create-fish-form-input"
         />
-        {formErrors.color && (
+        {formErrors.name && (
           <span className="create-fish-form-error">{formErrors.name}</span>
         )}
       </label>
@@ -94,7 +94,7 @@ const FishForm = ({ onSubmitFish }) => {
           onChange={handleChange}
           className="create-fish-form-input"
         />
-        {formErrors.color && (
+        {formErrors.illustrationPhoto && (
           <span className="create-fish-form-error">{formErrors.color}</span>
         )}
       </label>
@@ -108,7 +108,7 @@ const FishForm = ({ onSubmitFish }) => {
           onChange={handleChange}
           className="create-fish-form-input"
         />
-        {formErrors.color && (
+        {formErrors.region && (
           <span className="create-fish-form-error">{formErrors.region}</span>
         )}
       </label>
@@ -122,7 +122,7 @@ const FishForm = ({ onSubmitFish }) => {
           onChange={handleChange}
           className="create-fish-form-input"
         />
-        {formErrors.color && (
+        {formErrors.info && (
           <span className="create-fish-form-error">{formErrors.info}</span>
         )}
       </label>
@@ -136,7 +136,7 @@ const FishForm = ({ onSubmitFish }) => {
           onChange={handleChange}
           className="create-fish-form-input"
         />
-        {formErrors.color && (
+        {formErrors.scientificName && (
           <span className="create-fish-form-error">
             {formErrors.scientificName}
           </span>

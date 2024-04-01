@@ -1,8 +1,11 @@
 .nav-bar {
   display: flex;
   align-items: center;
-  height: 100px;
-  padding: 20px;
-  background: white;
-  border-bottom: 3px solid teal;
+  justify-content: center;
+  height: 80px;
+  padding: 0 20px;
+  background: lightcyan;
+  border-bottom: 1px solid teal;
+  font-family: "Courier New", monospace;
+  font-weight: bolder;
 }

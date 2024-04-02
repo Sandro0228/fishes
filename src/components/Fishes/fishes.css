@@ -27,5 +27,5 @@
 .create-fish-button:hover {
   box-shadow: 10px 5px 5px teal;
   background: white;
-  color: black;
+  color: teal;
 }

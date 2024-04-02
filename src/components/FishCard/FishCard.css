@@ -14,7 +14,7 @@ h3 {
 
 p {
   padding: 10px;
-  font-size: 0.7vw;
+  font-size: 0.8vw;
 }
 
 .card {
@@ -38,7 +38,7 @@ img {
 .show-button {
   position: absolute;
   background-color: #fff;
-  color: #0a0a23;
+  color: teal;
   border: 1px solid teal;
   border-radius: 10px;
   padding: 15px;

@@ -3,7 +3,7 @@
   font-size: 18px;
   cursor: pointer;
   border-radius: 5px;
-  color: black;
+  color: teal;
   text-decoration: none;
   transition: background-color 0.3s, color 0.3s;
 }

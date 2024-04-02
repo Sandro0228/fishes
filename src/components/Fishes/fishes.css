@@ -20,6 +20,8 @@
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
 }
 
 .create-fish-button:hover {

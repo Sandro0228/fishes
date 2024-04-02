@@ -9,6 +9,7 @@ h3 {
   border-radius: 10px;
   color: teal;
   text-align: center;
+  font-weight: bold;
 }
 
 p {
@@ -44,6 +45,7 @@ img {
   min-height: 30px;
   min-width: 120px;
   font-weight: bold;
+  font-family: "Roboto", sans-serif;
 }
 
 .show-button:hover {

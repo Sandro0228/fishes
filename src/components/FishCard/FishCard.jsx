@@ -13,6 +13,7 @@ const FishCard = ({
 }) => {
   const [isShowing, setIsShowing] = useState(false);
   const [stars, setStars] = useState(0);
+  const [unLikes, setUnLikes] = useState(0);
 
   const handleClick = () => {
     fishClicked({ info, name });
@@ -31,22 +32,36 @@ const FishCard = ({
   };
 
   const handleUnlikeClicked = () => {
-    setStars((prevStar) => prevStar - 1);
+    setUnLikes((prevLikes) => prevLikes + 1);
   };
 
+  const rating = () => {
+    if (stars === 0 && unLikes === 0) {
+      return 0;
+    } else if (stars - unLikes < 0) {
+      return 0;
+    }
+
+    let result = ((stars - unLikes) / (stars + unLikes)) * 10;
+    let rounded = result.toFixed(2);
+
+    return rounded;
+  };
   const renderStars = () => {
     let starIcon = "";
 
-    if (stars > 20) {
+    if (rating() > 9) {
       starIcon += "⭐⭐⭐⭐⭐ Excellent  ";
-    } else if (stars > 15) {
+    } else if (rating() > 7) {
       starIcon += "⭐⭐⭐⭐ Good  ";
-    } else if (stars > 10) {
+    } else if (rating() > 5) {
       starIcon += "⭐⭐⭐ Normal  ";
-    } else if (stars > 5) {
+    } else if (rating() > 2) {
       starIcon += "⭐⭐ Bad  ";
-    } else {
+    } else if (rating() <= 2 && rating() > 0.00001) {
       starIcon += "⭐ Very Bad  ";
+    } else if (starIcon.length === 0) {
+      starIcon += "Please rate the fish";
     }
 
     return starIcon;
@@ -72,8 +87,8 @@ const FishCard = ({
         <Modal onClose={() => setIsShowing(false)}>
           <img src={illustrationPhoto.src} alt={illustrationPhoto.alt} />
           <span>
-            Rating: {renderStars()}
-            <h4>Likes: {stars}</h4>
+            {renderStars()}
+            <h4>Rating: {rating()}</h4>
             <button
               className="like-button"
               onClick={() => {
